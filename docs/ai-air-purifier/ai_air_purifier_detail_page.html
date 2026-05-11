@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI 智能空气净化器 Pro 电商详情页</title>
+<style>
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif; color:#1e2a36; background:#f3f8fc; }
+.hero { padding:64px 8%; background:linear-gradient(135deg,#eaf7ff,#ffffff); display:grid; grid-template-columns:1.05fr .95fr; gap:36px; align-items:center; }
+h1 { font-size:48px; margin:0 0 16px; color:#145082; }
+h2 { font-size:30px; color:#145082; margin:0 0 18px; }
+p { line-height:1.8; font-size:17px; }
+.badges span { display:inline-block; padding:9px 14px; margin:6px 8px 6px 0; background:#fff; color:#145082; border:1px solid #cce7f8; border-radius:999px; font-weight:600; }
+.hero img { width:100%; border-radius:28px; box-shadow:0 20px 60px rgba(20,80,130,.18); }
+.section { padding:54px 8%; background:#fff; margin:18px auto; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.card { background:#f8fcff; border:1px solid #dceff9; border-radius:18px; padding:22px; box-shadow:0 8px 28px rgba(20,80,130,.06); }
+.card h3 { color:#145082; margin-top:0; }
+.timeline { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.step { background:#ecf8ff; border-radius:18px; padding:20px; text-align:center; }
+.step b { display:block; color:#145082; font-size:24px; margin-bottom:8px; }
+.phone { width:300px; margin:auto; background:#111; border-radius:36px; padding:14px; box-shadow:0 18px 50px rgba(0,0,0,.18); }
+.screen { background:#f7fbff; border-radius:26px; padding:18px; min-height:520px; }
+.metric { background:#fff; border-radius:20px; padding:18px; text-align:center; margin:12px 0; }
+.metric .num { font-size:56px; color:#19a1d8; font-weight:800; }
+table { width:100%; border-collapse:collapse; background:#fff; }
+th,td { border:1px solid #d7e8f3; padding:12px 14px; text-align:left; }
+th { background:#dff1fb; color:#145082; }
+.explode { text-align:center; }
+.part { fill:#e7f6ff; stroke:#4aa3d6; stroke-width:2; }
+.label { font-size:14px; fill:#145082; font-weight:600; }
+.footer { padding:40px 8%; text-align:center; color:#5f6b76; }
+@media(max-width:900px) { .hero { grid-template-columns:1fr; } .grid,.timeline { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<section class="hero">
+  <div>
+    <h1>AI 智能空气净化器 Pro</h1>
+    <p>懂空气，也懂你的清晨。空气净化、AI 闹钟、睡眠模式与 App 控制一体化，让每一次呼吸更安心，让每一次醒来更自然。</p>
+    <div class="badges"><span>AI 自动净化</span><span>智能闹钟</span><span>H13 HEPA</span><span>低噪睡眠</span><span>App 远程控制</span></div>
+  </div>
+  <div><img src="../assets/ai-air-purifier-product-concept.png" alt="AI 空气净化器概念图" /></div>
+</section>
+<section class="section">
+  <h2>实时感知空气变化</h2>
+  <div class="grid">
+    <div class="card"><h3>PM2.5 实时检测</h3><p>精准检测细颗粒物浓度，让空气质量看得见。</p></div>
+    <div class="card"><h3>VOC 异味感知</h3><p>识别室内异味变化，自动提升净化强度。</p></div>
+    <div class="card"><h3>温湿度监测</h3><p>同步了解居家舒适度，为 AI 策略提供依据。</p></div>
+  </div>
+</section>
+<section class="section">
+  <h2>AI 闹钟，清新唤醒</h2>
+  <div class="timeline">
+    <div class="step"><b>07:00</b>检测空气质量</div>
+    <div class="step"><b>07:10</b>自动开启净化</div>
+    <div class="step"><b>07:20</b>降低运行噪音</div>
+    <div class="step"><b>07:30</b>柔和铃声唤醒</div>
+  </div>
+</section>
+<section class="section">
+  <h2>App 页面原型示例</h2>
+  <div class="phone"><div class="screen">
+    <h3>AI 空气净化器 Pro</h3>
+    <p>在线</p>
+    <div class="metric"><div>PM2.5</div><div class="num">12</div><b>空气质量：优</b></div>
+    <div class="card">温度 25℃　湿度 48%<br/>VOC 正常</div>
+    <div class="card">当前模式：AI 自动<br/>自动 / 睡眠 / 极速 / 手动</div>
+    <div class="card">下一闹钟：07:30<br/>滤芯寿命：82%</div>
+  </div></div>
+</section>
+<section class="section explode">
+  <h2>结构爆炸图说明</h2>
+  <svg width="760" height="520" viewBox="0 0 760 520" role="img" aria-label="结构爆炸图示意">
+    <rect class="part" x="310" y="30" width="140" height="32" rx="16"/><text class="label" x="470" y="52">顶部出风格栅</text>
+    <rect class="part" x="330" y="95" width="100" height="54" rx="14"/><text class="label" x="455" y="128">高效离心风机</text>
+    <rect class="part" x="300" y="180" width="160" height="42" rx="16"/><text class="label" x="475" y="207">OLED 显示 / AI 主控</text>
+    <rect class="part" x="322" y="250" width="116" height="120" rx="18"/><text class="label" x="455" y="315">H13 HEPA 复合滤芯</text>
+    <rect class="part" x="295" y="405" width="170" height="42" rx="16"/><text class="label" x="480" y="432">360° 环绕进风口</text>
+    <rect class="part" x="315" y="470" width="130" height="28" rx="14"/><text class="label" x="460" y="490">防滑减震底座</text>
+    <line x1="380" y1="62" x2="380" y2="95" stroke="#9acde8" stroke-dasharray="5 5"/>
+    <line x1="380" y1="149" x2="380" y2="180" stroke="#9acde8" stroke-dasharray="5 5"/>
+    <line x1="380" y1="222" x2="380" y2="250" stroke="#9acde8" stroke-dasharray="5 5"/>
+    <line x1="380" y1="370" x2="380" y2="405" stroke="#9acde8" stroke-dasharray="5 5"/>
+  </svg>
+  <p>底部 360° 环绕进风，空气经复合滤芯过滤后，由高效离心风机从顶部送出洁净空气。AI 主控根据传感器数据自动调整净化策略。</p>
+</section>
+<section class="section">
+  <h2>参数表</h2>
+  <table><tr><th>参数</th><th>规格</th></tr>
+  <tr><td>适用面积</td><td>20㎡ - 45㎡</td></tr><tr><td>CADR</td><td>400 m³/h</td></tr><tr><td>噪音</td><td>22dB - 58dB</td></tr><tr><td>滤芯</td><td>H13 HEPA + 活性炭</td></tr><tr><td>连接</td><td>Wi-Fi / 蓝牙</td></tr><tr><td>控制</td><td>App / 语音 / 触控</td></tr><tr><td>功率</td><td>35W - 55W</td></tr></table>
+</section>
+<div class="footer">清新空气，智能唤醒。一台设备，守护你的呼吸、睡眠与清晨。</div>
+</body>
+</html>
