@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="980" viewBox="0 0 1100 980" role="img" aria-labelledby="title desc">
+  <title id="title">AoA orthogonal microstrip patch array PCB top layout</title>
+  <desc id="desc">Top view of a 150 mm by 150 mm PCB with four dual-feed microstrip patch antennas, 61.2 mm array pitch, and eight RF ports.</desc>
+  <defs>
+    <marker id="dimArrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,5 L10,0 L7,5 L10,10 z" fill="#334155"/>
+    </marker>
+    <marker id="routeArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L8,4 z" fill="#1b4d89"/>
+    </marker>
+    <pattern id="groundDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="2.4" fill="#1f6f55" opacity="0.7"/>
+    </pattern>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="980" fill="#f7fafc"/>
+  <text x="70" y="58" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1e293b">PCB Top Layout: 2 x 2 Orthogonal Dual-Polarized Patch Array</text>
+  <text x="70" y="91" font-family="Arial, sans-serif" font-size="16" fill="#475569">Scale: 5 px/mm. Board: 150 mm x 150 mm. Concept drawing only; tune in EM simulation before fabrication.</text>
+
+  <g transform="translate(100,120)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="750" height="750" rx="18" fill="#0f7a55" stroke="#064e3b" stroke-width="5"/>
+    <rect x="20" y="20" width="710" height="710" rx="12" fill="#16845f"/>
+    <rect x="36" y="36" width="678" height="678" rx="10" fill="url(#groundDots)" opacity="0.30"/>
+
+    <g id="connectors" font-family="Arial, sans-serif" font-size="13" font-weight="700">
+      <g fill="#e2e8f0" stroke="#475569" stroke-width="2">
+        <rect x="-34" y="185" width="34" height="46" rx="5"/>
+        <rect x="750" y="185" width="34" height="46" rx="5"/>
+        <rect x="-34" y="491" width="34" height="46" rx="5"/>
+        <rect x="750" y="491" width="34" height="46" rx="5"/>
+        <rect x="185" y="-34" width="46" height="34" rx="5"/>
+        <rect x="491" y="-34" width="46" height="34" rx="5"/>
+        <rect x="185" y="750" width="46" height="34" rx="5"/>
+        <rect x="491" y="750" width="46" height="34" rx="5"/>
+      </g>
+      <text x="-17" y="214" text-anchor="middle" fill="#0f172a">J1</text>
+      <text x="767" y="214" text-anchor="middle" fill="#0f172a">J2</text>
+      <text x="-17" y="520" text-anchor="middle" fill="#0f172a">J3</text>
+      <text x="767" y="520" text-anchor="middle" fill="#0f172a">J4</text>
+      <text x="208" y="-12" text-anchor="middle" fill="#0f172a">J5</text>
+      <text x="514" y="-12" text-anchor="middle" fill="#0f172a">J6</text>
+      <text x="208" y="772" text-anchor="middle" fill="#0f172a">J7</text>
+      <text x="514" y="772" text-anchor="middle" fill="#0f172a">J8</text>
+    </g>
+
+    <g id="routes" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 208 L118 208 L138 222 L185 222" stroke="#1b4d89" stroke-width="8" marker-end="url(#routeArrow)"/>
+      <path d="M750 208 L632 208 L612 222 L491 222" stroke="#1b4d89" stroke-width="8" marker-end="url(#routeArrow)"/>
+      <path d="M0 514 L118 514 L138 528 L185 528" stroke="#1b4d89" stroke-width="8" marker-end="url(#routeArrow)"/>
+      <path d="M750 514 L632 514 L612 528 L491 528" stroke="#1b4d89" stroke-width="8" marker-end="url(#routeArrow)"/>
+      <path d="M208 0 L208 112 L222 132 L222 185" stroke="#b5312d" stroke-width="8" marker-end="url(#routeArrow)"/>
+      <path d="M514 0 L514 112 L528 132 L528 185" stroke="#b5312d" stroke-width="8" marker-end="url(#routeArrow)"/>
+      <path d="M208 750 L208 638 L222 618 L222 491" stroke="#b5312d" stroke-width="8" marker-end="url(#routeArrow)"/>
+      <path d="M514 750 L514 638 L528 618 L528 491" stroke="#b5312d" stroke-width="8" marker-end="url(#routeArrow)"/>
+    </g>
+
+    <g id="patches" font-family="Arial, sans-serif">
+      <g transform="translate(147,147)">
+        <rect x="0" y="0" width="150" height="150" rx="6" fill="#d8a62f" stroke="#7a4f00" stroke-width="4"/>
+        <line x1="75" y1="0" x2="75" y2="150" stroke="#7a4f00" stroke-opacity="0.25" stroke-dasharray="8 8"/>
+        <line x1="0" y1="75" x2="150" y2="75" stroke="#7a4f00" stroke-opacity="0.25" stroke-dasharray="8 8"/>
+        <circle cx="38" cy="75" r="12" fill="#1b4d89" stroke="#dbeafe" stroke-width="3"/>
+        <circle cx="75" cy="38" r="12" fill="#b5312d" stroke="#fee2e2" stroke-width="3"/>
+        <text x="75" y="86" text-anchor="middle" font-size="22" font-weight="700" fill="#3b2800">P1</text>
+      </g>
+      <g transform="translate(453,147)">
+        <rect x="0" y="0" width="150" height="150" rx="6" fill="#d8a62f" stroke="#7a4f00" stroke-width="4"/>
+        <line x1="75" y1="0" x2="75" y2="150" stroke="#7a4f00" stroke-opacity="0.25" stroke-dasharray="8 8"/>
+        <line x1="0" y1="75" x2="150" y2="75" stroke="#7a4f00" stroke-opacity="0.25" stroke-dasharray="8 8"/>
+        <circle cx="38" cy="75" r="12" fill="#1b4d89" stroke="#dbeafe" stroke-width="3"/>
+        <circle cx="75" cy="38" r="12" fill="#b5312d" stroke="#fee2e2" stroke-width="3"/>
+        <text x="75" y="86" text-anchor="middle" font-size="22" font-weight="700" fill="#3b2800">P2</text>
+      </g>
+      <g transform="translate(147,453)">
+        <rect x="0" y="0" width="150" height="150" rx="6" fill="#d8a62f" stroke="#7a4f00" stroke-width="4"/>
+        <line x1="75" y1="0" x2="75" y2="150" stroke="#7a4f00" stroke-opacity="0.25" stroke-dasharray="8 8"/>
+        <line x1="0" y1="75" x2="150" y2="75" stroke="#7a4f00" stroke-opacity="0.25" stroke-dasharray="8 8"/>
+        <circle cx="38" cy="75" r="12" fill="#1b4d89" stroke="#dbeafe" stroke-width="3"/>
+        <circle cx="75" cy="38" r="12" fill="#b5312d" stroke="#fee2e2" stroke-width="3"/>
+        <text x="75" y="86" text-anchor="middle" font-size="22" font-weight="700" fill="#3b2800">P3</text>
+      </g>
+      <g transform="translate(453,453)">
+        <rect x="0" y="0" width="150" height="150" rx="6" fill="#d8a62f" stroke="#7a4f00" stroke-width="4"/>
+        <line x1="75" y1="0" x2="75" y2="150" stroke="#7a4f00" stroke-opacity="0.25" stroke-dasharray="8 8"/>
+        <line x1="0" y1="75" x2="150" y2="75" stroke="#7a4f00" stroke-opacity="0.25" stroke-dasharray="8 8"/>
+        <circle cx="38" cy="75" r="12" fill="#1b4d89" stroke="#dbeafe" stroke-width="3"/>
+        <circle cx="75" cy="38" r="12" fill="#b5312d" stroke="#fee2e2" stroke-width="3"/>
+        <text x="75" y="86" text-anchor="middle" font-size="22" font-weight="700" fill="#3b2800">P4</text>
+      </g>
+    </g>
+
+    <g id="viaFence" fill="#0b513d" opacity="0.85">
+      <circle cx="52" cy="52" r="4"/><circle cx="98" cy="52" r="4"/><circle cx="144" cy="52" r="4"/><circle cx="190" cy="52" r="4"/><circle cx="236" cy="52" r="4"/><circle cx="282" cy="52" r="4"/><circle cx="328" cy="52" r="4"/><circle cx="374" cy="52" r="4"/><circle cx="420" cy="52" r="4"/><circle cx="466" cy="52" r="4"/><circle cx="512" cy="52" r="4"/><circle cx="558" cy="52" r="4"/><circle cx="604" cy="52" r="4"/><circle cx="650" cy="52" r="4"/><circle cx="696" cy="52" r="4"/>
+      <circle cx="52" cy="698" r="4"/><circle cx="98" cy="698" r="4"/><circle cx="144" cy="698" r="4"/><circle cx="190" cy="698" r="4"/><circle cx="236" cy="698" r="4"/><circle cx="282" cy="698" r="4"/><circle cx="328" cy="698" r="4"/><circle cx="374" cy="698" r="4"/><circle cx="420" cy="698" r="4"/><circle cx="466" cy="698" r="4"/><circle cx="512" cy="698" r="4"/><circle cx="558" cy="698" r="4"/><circle cx="604" cy="698" r="4"/><circle cx="650" cy="698" r="4"/><circle cx="696" cy="698" r="4"/>
+      <circle cx="52" cy="98" r="4"/><circle cx="52" cy="144" r="4"/><circle cx="52" cy="190" r="4"/><circle cx="52" cy="236" r="4"/><circle cx="52" cy="282" r="4"/><circle cx="52" cy="328" r="4"/><circle cx="52" cy="374" r="4"/><circle cx="52" cy="420" r="4"/><circle cx="52" cy="466" r="4"/><circle cx="52" cy="512" r="4"/><circle cx="52" cy="558" r="4"/><circle cx="52" cy="604" r="4"/><circle cx="52" cy="650" r="4"/>
+      <circle cx="698" cy="98" r="4"/><circle cx="698" cy="144" r="4"/><circle cx="698" cy="190" r="4"/><circle cx="698" cy="236" r="4"/><circle cx="698" cy="282" r="4"/><circle cx="698" cy="328" r="4"/><circle cx="698" cy="374" r="4"/><circle cx="698" cy="420" r="4"/><circle cx="698" cy="466" r="4"/><circle cx="698" cy="512" r="4"/><circle cx="698" cy="558" r="4"/><circle cx="698" cy="604" r="4"/><circle cx="698" cy="650" r="4"/>
+    </g>
+
+    <g id="dimensionLines" font-family="Arial, sans-serif" font-size="15" fill="#0f172a" stroke="#334155" stroke-width="2">
+      <line x1="222" y1="105" x2="528" y2="105" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+      <text x="375" y="96" text-anchor="middle" stroke="none" fill="#0f172a">61.2 mm</text>
+      <line x1="630" y1="222" x2="630" y2="528" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+      <text x="646" y="379" stroke="none" fill="#0f172a" transform="rotate(90 646 379)">61.2 mm</text>
+      <line x1="147" y1="630" x2="297" y2="630" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+      <text x="222" y="653" text-anchor="middle" stroke="none" fill="#0f172a">30 mm patch</text>
+    </g>
+  </g>
+
+  <g transform="translate(895,150)" font-family="Arial, sans-serif">
+    <rect x="0" y="0" width="160" height="230" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="18" y="34" font-size="18" font-weight="700" fill="#1e293b">Legend</text>
+    <rect x="20" y="58" width="24" height="18" fill="#d8a62f" stroke="#7a4f00"/>
+    <text x="54" y="73" font-size="14" fill="#334155">Patch copper</text>
+    <circle cx="32" cy="104" r="10" fill="#1b4d89"/>
+    <text x="54" y="109" font-size="14" fill="#334155">X-pol port</text>
+    <circle cx="32" cy="140" r="10" fill="#b5312d"/>
+    <text x="54" y="145" font-size="14" fill="#334155">Y-pol port</text>
+    <rect x="20" y="166" width="24" height="18" fill="#e2e8f0" stroke="#475569"/>
+    <text x="54" y="181" font-size="14" fill="#334155">RF connector</text>
+    <circle cx="32" cy="210" r="5" fill="#0b513d"/>
+    <text x="54" y="215" font-size="14" fill="#334155">GND via</text>
+  </g>
+
+  <g transform="translate(895,430)" font-family="Arial, sans-serif">
+    <rect x="0" y="0" width="160" height="245" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="18" y="34" font-size="18" font-weight="700" fill="#1e293b">Ports</text>
+    <text x="18" y="68" font-size="14" fill="#334155">J1-J4: X-pol</text>
+    <text x="18" y="96" font-size="14" fill="#334155">J5-J8: Y-pol</text>
+    <text x="18" y="132" font-size="14" fill="#334155">4-channel RX:</text>
+    <text x="18" y="158" font-size="14" fill="#334155">use J1-J4 first</text>
+    <text x="18" y="194" font-size="14" fill="#334155">8-channel RX:</text>
+    <text x="18" y="220" font-size="14" fill="#334155">capture both pols</text>
+  </g>
+
+  <text x="70" y="930" font-family="Arial, sans-serif" font-size="14" fill="#64748b">Note: microstrip width, feed offset, matching slots, and isolation features require optimization for the actual PCB stackup and connectors.</text>
+</svg>
